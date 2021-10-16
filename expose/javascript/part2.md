@@ -43,10 +43,10 @@
     e. The output is false. This is false because true is mapped to its integer representation which is 1, and 1 does not equal 2.
 
     f. The output is true. This is because Boolean(2) will return true and is clearly of type boolean. Thus both sides of the equality are the same type and have the same value.
-    
+
 15. The difference is that == will convert the variables to the same type before doing a comparison, while === will not perform type conversion and returns true only if the variables are the same type and value. 
 16. See part2-question16.js
-17. d
-18. d
-19. 
+17. The result is `[2,4,6]`. To arrive at the result, we can look at the input for the function modifyArray. Here we have an array `[1,2,3]` and the function `doSomething`. Inside of the function `modifyArray`, we are intializing a new array and pushing the elements froms the parameter array into this new array after calling the callback parameter (`doSomething`) on each element. `doSomething` multiples the value of each element by 2, and that is why the output is double the input array. 
+18. See part2-question18.js
+19. The output of the program is 1 4 3 2 (with \n between each character instead of spaces). This is the output because when `printNums` is called first 1 will be logged, and then a call to the function on line 3 is scheduled for 1 second later, a call to the function on line 4 is scheduled for 0 seconds later, and then 4 is printed. After that timer of 0 seconds for the function on line 4 expires, so 3 is printed. Lastly the timer on the call to the function of line 3 expires, so 2 is printed.
     
